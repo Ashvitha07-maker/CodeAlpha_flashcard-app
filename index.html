@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Flashcard Quiz App</h1>
+        
+        <!-- Flashcard Display Area -->
+        <div class="flashcard" id="flashcard">
+            <div class="card-content">
+                <p id="cardText" class="card-text">Click Show Answer</p>
+            </div>
+        </div>
+
+        <!-- Card Navigation Buttons -->
+        <div class="nav-buttons">
+            <button id="prevBtn" class="nav-btn">◀ Previous</button>
+            <span id="cardCounter" class="card-counter">Card 1 / 1</span>
+            <button id="nextBtn" class="nav-btn">Next ▶</button>
+        </div>
+
+        <!-- Show Answer Button -->
+        <button id="showAnswerBtn" class="show-answer-btn">Show Answer</button>
+
+        <!-- Add/Edit/Delete Section -->
+        <div class="manage-section">
+            <h3>Manage Flashcards</h3>
+            
+            <div class="input-group">
+                <input type="text" id="questionInput" placeholder="Question (front of card)" class="input-field">
+                <input type="text" id="answerInput" placeholder="Answer (back of card)" class="input-field">
+            </div>
+            
+            <div class="action-buttons">
+                <button id="addBtn" class="action-btn add-btn">➕ Add New Card</button>
+                <button id="editBtn" class="action-btn edit-btn">✏️ Edit Current Card</button>
+                <button id="deleteBtn" class="action-btn delete-btn">🗑️ Delete Current Card</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
